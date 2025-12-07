@@ -1578,7 +1578,7 @@ Examples:
         is_recompute = meta.get("is_pruned") or meta_backend_kwargs.get("is_recompute", True)
         num_threads = meta_backend_kwargs.get("num_threads", 1)
 
-        print(f"✅ Index configuration:")
+        print("✅ Index configuration:")
         print(f"   Backend: {backend_name}")
         print(f"   Embedding model: {embedding_model}")
         print(f"   Embedding mode: {embedding_mode}")
@@ -1630,7 +1630,7 @@ Examples:
         )
 
         # Load new documents
-        print(f"\n🔄 Loading new documents...")
+        print("\n🔄 Loading new documents...")
         all_texts = self.load_documents(
             docs_paths, args.file_types, include_hidden=args.include_hidden, args=args
         )
